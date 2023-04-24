@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: pink;
+            color: white;
+        }
+        button{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>我是页面顶部</h2>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <button>返回顶部</button>
+    <script>
+        //获取页面元素
+        var btn=document.querySelector('button');
+        var obj=document.documentElement || document.body;
+        //给scroll添加功能
+        window.onscroll=function(){
+            //判断按钮什么时候显示
+            if(obj.scrollTop>1000){
+                btn.style.display='block';
+            }else{
+                btn.style.display='none';
+            }
+        };
+        //给按钮设计点击效果
+        btn.onclick=function(){
+            var timer=setInterval(function(){
+                if(obj.scrollTop !=0){
+                obj.scrollTop=obj.scrollTop - 50;
+            }else{
+                clearInterval(timer);
+            }
+            },100);
+        };
+    </script>
+</body>
+</html>

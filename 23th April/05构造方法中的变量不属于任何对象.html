@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var person=function(Name,age){
+            var salary=1000;
+            this.Name=Name;
+            this.age=age;
+            //如果需要拿到工资
+            this.getSalary=function(){
+                return salary;
+            }
+        };
+        var p1=new person('Tom',23);
+        console.log(p1.age);
+        console.log(p1.Name);
+        console.log(p1.salary);//这不是属性，是构造函数中的变量，所以不属于任何对象，掉不出来
+        //返回值为undefined
+        console.log(p1.getSalary);
+        
+    </script>
+</body>
+</html>
